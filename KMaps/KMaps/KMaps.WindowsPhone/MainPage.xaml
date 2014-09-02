@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="KMaps.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KMaps"
+    xmlns:maps="using:Windows.UI.Xaml.Controls.Maps"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    >
+
+    <Grid>
+        <maps:MapControl x:Name="MyMap" LandmarksVisible="True" PedestrianFeaturesVisible="True" />
+        <StackPanel x:Name="PanelLoad" Visibility="Collapsed" VerticalAlignment="Center">
+            <ProgressRing Background="Transparent" Foreground="Red" IsActive="True"/>
+            <TextBlock Foreground="Red" x:Uid="TextBlockBar" FontSize="15" Text="Loading ..." HorizontalAlignment="Center"/>
+        </StackPanel>
+            <StackPanel>
+            <StackPanel x:Name="TypesMaps" Visibility="Visible" Background="Transparent" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <Image x:Name="roadmap" Source="/Icons/roadmap.png" Width="50" Margin="5" Tapped="roadmap_Tapped" />
+                <Image x:Name="aerialmap" Source="/Icons/aerialmap.png" Width="50" Margin="7" Tapped="aerialmap_Tapped" />
+                <Image x:Name="hybridmap" Source="/Icons/hybridmap.png" Width="50" Margin="7" Tapped="hybridmap_Tapped" />
+                <Image x:Name="terrainmap" Source="/Icons/terrainmap.png" Width="50" Margin="7" Tapped="terrainmap_Tapped" />
+                <Image x:Name="lightmap" Source="/Icons/lightmap.png" Width="50" Margin="7" Tapped="lightmap_Tapped" />
+                <Image x:Name="darkmap" Source="/Icons/darkmap.png" Width="50" Margin="7" Tapped="darkmap_Tapped" />
+            </StackPanel>
+            <TextBox x:Name="searchtext" Visibility="Visible" BorderBrush="LightBlue" Foreground="Black" VerticalAlignment="Top" LostFocus="searchtext_LostFocus" KeyDown="searchtext_KeyDown" Width="380" />
+            <Slider x:Name="PitchSlider" Orientation="Vertical" HorizontalAlignment="Right" Margin="20,220,20,0" Height="211" Width="45" Minimum="0" Maximum="70" Value="0" ValueChanged="PitchSlider_ValueChanged"/>
+        </StackPanel>
+        <Grid x:Name="PanelRoutes" Visibility="Collapsed" Background="Black" Height="300" VerticalAlignment="Bottom">
+            <ScrollViewer>
+                <TextBlock x:Name="RouteDetails" FontSize="18" TextWrapping="WrapWholeWords"/>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:Name="search" x:Uid="AppBarButton1" Label="Search" Icon="Find" Click="search_Click" />
+                <AppBarButton x:Name="route" x:Uid="AppBarButton2" Label="Route" Icon="Directions" Click="route_Click" />
+                <AppBarButton x:Name="LocateMe" x:Uid="AppBarButton3" Label="Locate me" Icon="Map" Click="LocateMe_Click" />
+                <AppBarButton x:Name="Maps" x:Uid="AppBarButton4" Label="Maps" Icon="World" Click="Maps_Click" />
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Name="DownloadMaps" x:Uid="AppBarButton5" Label="Download Maps" Click="DownloadMaps_Click" />
+                <AppBarButton x:Name="MyMaps" x:Uid="AppBarButton6" Label="My Maps" Click="MyMaps_Click" />
+                <AppBarButton x:Name="Landmarks" x:Uid="AppBarButton7On" Label="Landmarks" Click="Landmarks_Click" />
+                <AppBarButton x:Name="Pedestrian" x:Uid="AppBarButton8On" Label="Pedestrian" Click="Pedestrian_Click" />
+                <AppBarButton x:Name="Directions" x:Uid="AppBarButton9Off" Label="Directions" Click="Directions_Click" />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+
+</Page>
