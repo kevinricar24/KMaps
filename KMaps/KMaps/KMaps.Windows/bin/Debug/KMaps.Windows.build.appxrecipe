@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>KEVINSAMSUNG</Machine>
+    <WindowsUser>Kevin</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>efb04cef-1f69-4efe-8853-691d6d4bba59</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Windows\bin\Debug\KMaps.Windows.exe">
+      <PackagePath>KMaps.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Shared\Icons\aerialmap.png">
+      <PackagePath>Icons\aerialmap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Shared\Icons\darkmap.png">
+      <PackagePath>Icons\darkmap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Shared\Icons\hybridmap.png">
+      <PackagePath>Icons\hybridmap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Shared\Icons\lightmap.png">
+      <PackagePath>Icons\lightmap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Shared\Icons\pushpin.png">
+      <PackagePath>Icons\pushpin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Shared\Icons\pushpinWPCN.png">
+      <PackagePath>Icons\pushpinWPCN.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Shared\Icons\roadmap.png">
+      <PackagePath>Icons\roadmap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Shared\Icons\terrainmap.png">
+      <PackagePath>Icons\terrainmap.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Windows\bin\Debug\KMaps.Windows.xr.xml">
+      <PackagePath>KMaps.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kevin\Documents\KYCAPP\UniversalApps\KMaps\KMaps\KMaps.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

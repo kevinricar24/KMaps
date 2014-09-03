@@ -529,5 +529,3 @@ namespace KMaps.KMaps_WindowsPhone_XamlTypeInfo
 }
 
 
-
-

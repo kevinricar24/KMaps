@@ -16,7 +16,7 @@
             <ProgressRing Background="Transparent" Foreground="Red" IsActive="True"/>
             <TextBlock Foreground="Red" x:Uid="TextBlockBar" FontSize="15" Text="Loading ..." HorizontalAlignment="Center"/>
         </StackPanel>
-            <StackPanel>
+        <StackPanel>
             <StackPanel x:Name="TypesMaps" Visibility="Visible" Background="Transparent" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
                 <Image x:Name="roadmap" Source="/Icons/roadmap.png" Width="50" Margin="5" Tapped="roadmap_Tapped" />
                 <Image x:Name="aerialmap" Source="/Icons/aerialmap.png" Width="50" Margin="7" Tapped="aerialmap_Tapped" />
@@ -26,7 +26,8 @@
                 <Image x:Name="darkmap" Source="/Icons/darkmap.png" Width="50" Margin="7" Tapped="darkmap_Tapped" />
             </StackPanel>
             <TextBox x:Name="searchtext" Visibility="Visible" BorderBrush="LightBlue" Foreground="Black" VerticalAlignment="Top" LostFocus="searchtext_LostFocus" KeyDown="searchtext_KeyDown" Width="380" />
-            <Slider x:Name="PitchSlider" Orientation="Vertical" HorizontalAlignment="Right" Margin="20,220,20,0" Height="211" Width="45" Minimum="0" Maximum="70" Value="0" ValueChanged="PitchSlider_ValueChanged"/>
+            <Slider x:Name="PitchSlider2" Orientation="Horizontal" HorizontalAlignment="Center"  Height="40" Width="186" Minimum="0" Maximum="70" Value="0" ValueChanged="PitchSlider2_ValueChanged" />
+            <Slider x:Name="PitchSlider" Orientation="Vertical" HorizontalAlignment="Right" Margin="20,220,20,0" Height="150" Width="45" Minimum="0" Maximum="70" Value="0" ValueChanged="PitchSlider_ValueChanged"/>
         </StackPanel>
         <Grid x:Name="PanelRoutes" Visibility="Collapsed" Background="Black" Height="300" VerticalAlignment="Bottom">
             <ScrollViewer>

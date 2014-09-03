@@ -49,12 +49,12 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Slider">
       <RootProperty Name="Orientation" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Minimum" />
       <RootProperty Name="Maximum" />
       <RootProperty Name="Value" />
+      <RootProperty Name="Margin" />
       <RootEvent Name="ValueChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
